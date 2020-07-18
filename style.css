@@ -12,7 +12,64 @@
     padding: 0;
     font-family: 'Bebas Neue', cursive;
 }
-
+.blog-months{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+.footer-class-blogs{
+    margin-top: 100px;
+    height: 175px;
+    width: 100%;
+    background-color: rgb(0, 132, 255);
+    display: inline-block;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.blog-post{
+    margin-top: -700px;
+    text-align: center;
+    width: 60%;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: rgba(0,0,0, .5)
+}
+.blog-post > h3{
+    font-size: 25px;
+    color: white;
+}
+.quote{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    font-family:'Montserrat', sans-serif;
+    color: white;
+}
+.blog-post > p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.blog-post > h5{
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.blog-post > a{
+    text-decoration: underline;
+    text-decoration-color: royalblue;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
 .head-transition{
     animation: 1s ease-out 0s 1 slideInFromRight;
 }
@@ -24,6 +81,9 @@
     height: 100px;
     position: relative;
     width: 100%;
+}
+.nav-selected{
+background-color: rgb(0, 132, 255);
 }
 .nav-links{
     display: inline-block;
@@ -39,8 +99,8 @@
 }
 .nav-links > a:hover{
     text-decoration: underline;
-    text-decoration-color: blue;
-    background-color: blue;
+    text-decoration-color: rgb(0, 132, 255);
+    background-color: rgb(0, 132, 255);
 }
 .social-container{
     width: 50%;
@@ -49,6 +109,17 @@
     grid-template-columns: auto auto auto;
 }
 .header{
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    height: 1000px;
+    background-image: linear-gradient(to top, 
+    rgba(255, 255, 255),
+    rgba(0,0,0,0)),
+    url('assets/backgrounds/head-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header-boards{
     animation: 1s ease-out 0s 1 slideInFromRight;
     height: 1000px;
     background-image: linear-gradient(to top, 
@@ -115,9 +186,43 @@ main{
     justify-content: center;
     align-items: center;
 }
+.grid-12{
+    justify-content: space-evenly;
+    grid-template-columns: repeat(6, auto);
+}
+.grid-2{
+    grid-template-columns: auto auto;
+}
+.shop-item{
+    text-align: center;
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    border: none;
+    box-shadow: 3px 5px 10px rgba(0,0,0,.5);
+    background-color: white;
+}
+.shop-item:hover{
+    box-shadow: 3px 5px 10px rgb(0, 132, 255);
+}
+.shop-item > img{
+    width: 100px;
+    height: 100px;
+}
+.shop-item > h3{
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.boards-shop-container{
+    display: grid;
+    width: 75%;
+    height: 800px;
+    background-color: white;
+    box-shadow: 3px 5px 10px, rgba(0,0,0,.5);
+}
+
 .main-shop-container{
     display: grid;
-    grid-template-columns: auto auto;
     width: 75%;
     height: 600px;
     background-image: -webkit-linear-gradient(-45deg, 
@@ -488,8 +593,88 @@ main{
 .video{
     width: 480px;
 }
+.footer-class{
+    margin-top: 800px;
+    height: 175px;
+    width: 100%;
+    background-color: rgb(0, 132, 255);
+    display: inline-block;
+}
+.footer-class-boards{
+    margin-top: 150px;
+    height: 175px;
+    width: 100%;
+    background-color: rgb(0, 132, 255);
+    display: inline-block;
+}
+.footer-container{
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.footer-class > p{
+    margin-top: 25px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif
+}
+.footer-class-blogs > p{
+    margin-top: 25px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif
+}
+.footer-class-boards > p{
+    margin-top: 25px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif
+}
 
-@media only screen and (max-width: 768px) and (min-width: 426px){
+.footer-column-1 > h3{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.footer-column-1 > a{
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 15px;
+    font-family:'Montserrat', sans-serif;
+}
+.footer-column-2 > h3{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.footer-column-2 > a{
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 15px;
+    font-family:'Montserrat', sans-serif;
+}
+.footer-column-3 > h3{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.footer-column-3 > p{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family:'Montserrat', sans-serif;
+}
+@media only screen and (max-width: 768px) and (min-width: 415px){
+    .header-boards{
+        height: 1500px;
+    }
     .nav-links > a{
         font-size: 20px;
     }
@@ -502,9 +687,21 @@ main{
     .main-shop-container{
         width: 100%;
     }
+    .boards-shop-container{
+        width: 100%;
+    }
+    .grid-12{
+        grid-template-columns: repeat(4, auto);
+    }
+    .boards-shop-container{
+        height: 1000px;
+    }
     .shop-image{
         margin-right: 100px;
         width: 15%;
+    }
+    .footer-class-boards{
+        margin-top: 500px;
     }
     .shop-image > img{
         width: 200px;
@@ -598,7 +795,8 @@ main{
     }
 
 }
-@media only screen and (max-width: 425px) and (min-width: 376px){
+@media only screen and (max-width: 414px) and (min-width: 376px){
+
     .nav-logo{
         margin-top: 30px;
         margin-left: 5px;
@@ -608,6 +806,22 @@ main{
         margin-right: 25px;
         margin-top: 15px;
         display: block;
+        width: 100%;
+    }
+    .header-boards{
+        height: 1500px;
+        width: 100%;
+    }
+    .boards-shop-container{
+        width: 100%;
+        height: 1000px;
+    }
+    .grid-12{
+        grid-template-columns: repeat(2, auto);
+    }
+    .footer-class-boards{
+        margin-top: 1500px;
+        height: 200px;
         width: 100%;
     }
     .facebook-icon{
@@ -753,5 +967,396 @@ main{
     .abu-left-text > h3{
         font-size: 25px;
     }
+    .footer-class{
+        margin-top: 400px;
+    }
+    .footer-column-1 > a{
+        font-size: 10px;
 
+    }
+    .footer-column-2 > a{
+        font-size: 10px;
+
+    }
+    .footer-column-3 > p{
+        font-size: 10px;
+
+    }
+
+}
+@media only screen and (max-width: 375px) and (min-width: 361px){
+
+    .nav-logo{
+        margin-top: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .social-container{
+        margin-right: 25px;
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+    }
+    .header-boards{
+        height: 1500px;
+        width: 100%;
+    }
+    .boards-shop-container{
+        width: 100%;
+        height: 1000px;
+    }
+    .grid-12{
+        grid-template-columns: repeat(2, auto);
+    }
+    .footer-class-boards{
+        margin-top: 1500px;
+        height: 200px;
+        width: 100%;
+    }
+    .facebook-icon{
+        width: 15px;
+        height: 15px;
+    }
+    .insta-icon{
+        margin-top: 10px;
+        width: 15px;
+        height: 15px;
+    }
+    .twitter-icon{
+        margin-top: 10px;
+        width: 15px;
+        height: 15px;
+    }
+    .nav-logo > img{
+        width: 100px;
+    }
+    .nav-links > a{
+        font-size: 15px;
+    }
+    .header-text-container{
+        width: 100%;
+    }
+    .header-text-container > h3{
+        font-size: 30px;
+    }
+    .header-text-container > h4{
+        font-size: 15px;
+    }
+    .main-shop-container{
+        width: 100%;
+    }
+    .blog-months{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        margin-top: 15px;
+        text-align: center;
+        color: white;
+    }
+    .blog-months > span:hover{
+        text-decoration: underline;
+        text-decoration-color: rgb(0, 132, 255);
+    }
+    .shop-image > ul{
+        margin-left: 5px;
+        text-decoration: none;
+    }
+    .shop-image{
+        margin-top:50%;
+        margin-right: 25px;
+        width: 15%;
+    }
+    .shop-image > img{
+        width: 100px;
+        margin-left: 3px;
+    }
+    .image-select-item-1{
+        width: 35px;
+        height: 35px;
+    }
+    .image-select-item-2{
+        width: 35px;
+        height: 35px;
+    }
+    .image-select-item-3{
+        width: 35px;
+        height: 35px;
+    }
+    .image-select-item-4{
+        width: 35px;
+        height: 35px;
+    }
+    .image-selector{
+        display: none;
+        height: 200px;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    .shop-desc{
+        margin-left: 5px;
+        width: 75%;
+    }
+    .main-shop-container{
+        height: 450px;
+    }
+    .shop-desc > h3{
+        font-size: 20px;
+    }
+    .desc-box > span{
+        font-size: 12px;
+    }
+    .desc-box > p{
+        font-size: 12px;
+        width: 250px;
+    }
+    .about-us-section{
+        background-position-y: 0;
+        height: 600px;
+    }
+    .about-us-left{
+        width: 100%;
+    }
+    .about-us-section{
+        margin-top: -150px;
+    }
+    .about-us-container{
+        grid-template-columns: auto;
+    }
+    .about-us-right{
+        display: none;
+        margin-top: 450px;
+    }
+    .our-team-box-1{
+        display: none;
+        width: 200px;
+        height: 300px;
+    }
+    .our-team-box-2{
+        width: 200px;
+        height: 300px;
+    }
+    .our-team-box-3{
+        width: 200px;
+        height: 300px;
+    }
+    .our-team-box-4{
+        display: none;
+        width: 200px;
+        height: 300px;
+    }
+    .our-team-image-1{
+        width: 100px;
+        height: 100px;
+    }
+    .our-team-image-2{
+        width: 100px;
+        height: 100px;
+    }
+    .our-team-image-3{
+        width: 100px;
+        height: 100px;
+    }
+    .our-team-image-4{
+        width: 100px;
+        height: 100px;
+    }
+    .our-team-left{
+        display: none;
+    }
+    .our-team-right{
+        display: none;
+    }
+    .video{
+        width: 320px;
+    }
+    .abu-left-text > h3{
+        font-size: 25px;
+    }
+    .footer-class{
+        margin-top: 400px;
+    }
+    .footer-column-1 > a{
+        font-size: 10px;
+
+    }
+    .footer-column-2 > a{
+        font-size: 10px;
+
+    }
+    .footer-column-3 > p{
+        font-size: 10px;
+
+    }
+}
+@media only screen and (max-width: 360px){
+
+    .nav-logo{
+        margin-top: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .social-container{
+        margin-right: 25px;
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+    }
+    .header-boards{
+        height: 1500px;
+        width: 100%;
+    }
+    .boards-shop-container{
+        width: 100%;
+        height: 1000px;
+    }
+    .grid-12{
+        grid-template-columns: repeat(2, auto);
+    }
+    .footer-class-boards{
+        margin-top: 1500px;
+        height: 200px;
+        width: 100%;
+    }
+    .facebook-icon{
+        width: 15px;
+        height: 15px;
+    }
+    .insta-icon{
+        margin-top: 10px;
+        width: 15px;
+        height: 15px;
+    }
+    .twitter-icon{
+        margin-top: 10px;
+        width: 15px;
+        height: 15px;
+    }
+    .nav-logo > img{
+        width: 100px;
+    }
+    .nav-links > a{
+        font-size: 15px;
+    }
+    .header-text-container{
+        width: 100%;
+    }
+    .header-text-container > h3{
+        font-size: 30px;
+    }
+    .header-text-container > h4{
+        font-size: 15px;
+    }
+    .main-shop-container{
+        width: 100%;
+    }
+    .shop-image{
+        margin-top:50%;
+        margin-right: 25px;
+        width: 15%;
+    }
+    .shop-image > img{
+        width: 100px;
+        margin-left: 3px;
+    }
+    .image-select-item-1{
+        width: 35px;
+        height: 35px;
+    }
+    .image-select-item-2{
+        width: 35px;
+        height: 35px;
+    }
+    .image-select-item-3{
+        width: 35px;
+        height: 35px;
+    }
+    .image-select-item-4{
+        width: 35px;
+        height: 35px;
+    }
+    .image-selector{
+        display: none;
+        height: 200px;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    .shop-desc{
+        margin-left: 5px;
+        width: 75%;
+    }
+    .main-shop-container{
+        height: 450px;
+    }
+    .shop-desc > h3{
+        font-size: 20px;
+    }
+    .desc-box > span{
+        font-size: 15px;
+    }
+    .desc-box > p{
+        font-size: 15px;
+        width: 300px;
+    }
+    .about-us-section{
+        background-position-y: 0;
+        height: 600px;
+    }
+    .about-us-left{
+        width: 100%;
+    }
+    .about-us-section{
+        margin-top: -150px;
+    }
+    .about-us-container{
+        grid-template-columns: auto;
+    }
+    .about-us-right{
+        display: none;
+        margin-top: 450px;
+    }
+    .our-team-box-1{
+        display: none;
+        width: 200px;
+        height: 300px;
+    }
+    .our-team-box-2{
+        width: 200px;
+        height: 300px;
+    }
+    .our-team-box-3{
+        width: 200px;
+        height: 300px;
+    }
+    .our-team-box-4{
+        display: none;
+        width: 200px;
+        height: 300px;
+    }
+    .our-team-image-1{
+        width: 100px;
+        height: 100px;
+    }
+    .our-team-image-2{
+        width: 100px;
+        height: 100px;
+    }
+    .our-team-image-3{
+        width: 100px;
+        height: 100px;
+    }
+    .our-team-image-4{
+        width: 100px;
+        height: 100px;
+    }
+    .our-team-left{
+        display: none;
+    }
+    .our-team-right{
+        display: none;
+    }
+    .video{
+        width: 320px;
+    }
+    .abu-left-text > h3{
+        font-size: 25px;
+    }
 }
